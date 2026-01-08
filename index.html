@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Md. Mustafijur Rahman">
+    <meta name="description" content="This page shares my learning and findings while building with HTML.">
+    <title>My Home Page</title>
+    <link rel="icon" href="Images/author.svg" type="image/svg+xml">
+    <link rel="icon" href="Images/author.png" type="image/png">
+    <link rel="stylesheet" href="main.css" type="text/css">
+</head>
+<body>
+    <header>
+        <h1>My Goals Before 2026</h1>
+        <nav class="starry-nav" aria-label="Primary Navigation">
+    <h2 class="visually-hidden">Primary Navigation</h2>
+    <div class="nav-main">
+        <ul class="nav-links">
+            <li><a class="nav-link" href="#html"><span class="nav-icon">📚</span><span class="nav-text">Learning HTML</span></a></li>
+            <li><a class="nav-link" href="#vacation"><span class="nav-icon">🏖️</span><span class="nav-text">Planning A Vacation</span></a></li>
+            <li><a class="nav-link" href="#contact"><span class="nav-icon">📧</span><span class="nav-text">Contact Me</span></a></li>
+            <li><a class="nav-link" href="#facebook"><span class="nav-icon">📱</span><span class="nav-text">On Facebook</span></a></li>
+        </ul>
+        <div class="nav-extra">
+            <div class="progress-indicator">
+                <span class="progress-text">CS50 Progress</span>
+                <div class="progress-bar">
+                    <div class="progress-fill" style="width: 40%"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
+    </header>
+    
+    <hr>
+    
+    <main>
+        <article id="html">
+            <h2>I Am Ready To Learn HTML</h2>
+            <p>This is My Home Page</p>
+            
+            <section>
+                <h3>HTML5</h3>
+                <figure>
+                    <img src="Images/me.jpg" alt="Md. Mustafijur Rahman" title="Author" width="300" height="300" loading="lazy">
+                    <figcaption>Md. Mustafijur Rahman</figcaption>
+                </figure>
+                
+                <hr>
+                
+                <figure>
+                    <figcaption>An Example of HTML Code</figcaption>
+                    <p><code>&lt;h1&gt;Hello Bangladesh!&lt;/h1&gt;</code></p>
+                </figure>
+            </section>
+            
+            <section>
+                <h3>My Daily Schedule</h3>
+                <p>Let me explain how I manage:</p>
+                <ol>
+                    <li>I learn more about web dev.</li>
+                    <li>I plan my schedule accordingly.</li>
+                    <li>I use resources from <abbr title="Mozilla Developer Network"><a href="https://developer.mozilla.org/" target="_blank" rel="noopener">MDN</a></abbr>.</li>
+                </ol>
+            </section>
+            
+            <aside aria-label="Motivation FAQ">
+                <h2 class="visually-hidden">Motivation FAQ</h2>
+                <details>
+                    <summary>What motivates me while working on software development?</summary>
+                    <p>I see myself as a person destined to create great things.</p>
+                </details>
+            </aside>
+            
+            <aside aria-label="Coding Hours FAQ">
+                <h2 class="visually-hidden">Coding Hours FAQ</h2>
+                <details>
+                    <summary>How long do I stay involved in software development?</summary>
+                    <p>I write code for <time datetime="PT3H">3 hours</time> just before my regular working hours.</p>
+                </details>
+            </aside>
+            
+            <aside aria-label="Schedule FAQ">
+                <h2 class="visually-hidden">Schedule FAQ</h2>
+                <details>
+                    <summary>How early do I start working on software development?</summary>
+                    <p>I start working at <time datetime="05:00">5:00 AM</time> every morning.</p>
+                </details>
+            </aside>
+            
+            <table>
+                <caption>My Daily Schedule</caption>
+                <thead>
+                    <tr>
+                        <th>Time Period</th>
+                        <th>Time Range</th>
+                        <th>Duration</th>
+                        <th scope="col">Activity</th>
+                        <th scope="col">Place</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">Early Morning</th>
+                        <td><time datetime="05:00">5:00 AM</time> &ndash; <time datetime="08:00">8:00 AM</time></td>
+                        <td><time datetime="PT3H">3 Hours</time></td>
+                        <td>Write Code</td>
+                        <td>My Desk</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Morning</th>
+                        <td><time datetime="08:00">8:00 AM</time> &ndash; <time datetime="08:30">8:30 AM</time></td>
+                        <td><time datetime="PT30M">30 Minutes</time></td>
+                        <td>Eat Breakfast</td>
+                        <td>Dining Room</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Late Morning</th>
+                        <td><time datetime="08:30">8:30 AM</time> &ndash; <time datetime="09:00">9:00 AM</time></td>
+                        <td><time datetime="PT30M">30 Minutes</time></td>
+                        <td>Go To Office</td>
+                        <td>Home &rarr; Office</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Midday</th>
+                        <td><time datetime="09:00">9:00 AM</time> &ndash; <time datetime="19:00">7:00 PM</time></td>
+                        <td><time datetime="PT10H">10 Hours</time></td>
+                        <td>Office Hours</td>
+                        <td>Workplace</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Evening</th>
+                        <td rowspan="2">Free Time Period</td>
+                        <td><time datetime="PT2H">2 Hours</time></td>
+                        <td>Entertainment</td>
+                        <td>TV Room</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Night</th>
+                        <td><time datetime="PT8H">8 Hours</time></td>
+                        <td>Sleep</td>
+                        <td>My Room</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <th scope="row">Daily Summary</th>
+                        <td colspan="4">
+                            <small>Total productive hours: <time datetime="PT14H">14 Hours</time></small>
+                        </td>
+                    </tr>
+                </tfoot>
+            </table>
+        </article>
+        
+        <hr>
+        
+        <article id="vacation">
+            <h2>I Am Also Planning A Vacation</h2>
+            <p>I've been working hard and <em>really need a getaway.</em></p>
+            <p>I am from <abbr title="Khulna">KHL</abbr> and I need to visit Sea beach.</p>
+            
+            <section>
+                <h3>Places I'd Like to Visit</h3>
+                <ul>
+                    <li>
+                        <p>I have heard good things about The Kuakata Sea Beach.</p>
+                        <figure>
+                            <img src="Images/beach.jpg" alt="Kuakata Sea Beach" title="I want to visit here" width="400" height="225" loading="lazy">
+                            <figcaption>A Stunning View of The Beach From Sky</figcaption>
+                        </figure>
+                    </li>
+                    <li>
+                        <p>I have heard good things about going here:</p>
+                        <address>
+                            Kuakata Grand Hotel &amp; Sea Resorts<br>
+                            Grand Hotel, Sabirul Way, Kuakata 8600<br>
+                            R47G+WQ Kuakata, Patuakhali
+                        </address>
+                        <figure>
+                            <img src="Images/sands.jpg" alt="Landscape of Kuakata" title="Beauty in Sands" width="400" height="225" loading="lazy">
+                            <figcaption>Beauty in Sands</figcaption>
+                        </figure>
+                    </li>
+                </ul>
+            </section>
+            
+            <section>
+                <h3>Places I Want to Avoid</h3>
+                <p>Anywhere cold. <strong>I hate it!</strong></p>
+                <dl>
+                    <dt>North Pole</dt>
+                    <dd>This place is <strong>extremely</strong> cold</dd>
+                    <dt>South Pole</dt>
+                    <dd>This place has got the same reputation</dd>
+                    <dt>Mountain Tops</dt>
+                    <dd>In addition to being cold, these places are more dangerous with uneven terrains</dd>
+                </dl>
+            </section>
+        </article>
+        
+        <article id="contact">
+            <h2>Contact Me</h2>
+            <p>I Would Like To Hear From You.</p>
+            <form action="https://httpbin.org/post" method="post">
+                <fieldset>
+                    <legend>Personal Info.</legend>
+                    <p>
+                        <label for="firstName">First Name:</label>
+                        <input type="text" name="firstName" id="firstName" placeholder="Your First Name" autocomplete="given-name" required autofocus>
+                    </p>
+                    <p>
+                        <label for="lastName">Last Name:</label>
+                        <input type="text" name="lastName" id="lastName" placeholder="Your Last Name" autocomplete="family-name" required>
+                    </p>
+                    <p>
+                        <label for="password">Password:</label>
+                        <input type="password" name="password" id="password" placeholder="Secret Code" autocomplete="new-password" required>
+                    </p>
+                    <p>
+                        <label for="phone">Phone Number:</label>
+                        <input type="tel" name="phone" id="phone" placeholder="+8801XXXXXXXXX" pattern="[+]{1}880[0-9]{10}" autocomplete="tel" required>
+                    </p>
+                    <p>
+                        <label for="decade">Favorite Decade (1930-2030):</label>
+                        <input type="number" name="decade" id="decade" min="1930" max="2030" step="10" value="1930"aria-describedby="decade-help">
+                        <span id="decade-help" class="visually-hidden">Use arrow keys or type to select a decade</span>
+                    </p>
+                    <p>
+                        <label for="coffee">Favorite Coffee:</label>
+                        <select name="coffee" id="coffee" multiple size="4"
+                        aria-label="Choose one or more favorite coffee types">
+                            <optgroup label="Classic Coffees">
+                                <option value="espresso">Espresso</option>
+                                <option value="espresso & coffee">Espresso &amp; Coffee</option>
+                                <option value="cold brew">Cold Brew</option>
+                            </optgroup>
+                            <optgroup label="Milk-based Coffees">
+                                <option value="cappuccino">Cappuccino</option>
+                                <option value="mocha">Mocha</option>
+                                <option value="iced coffees">Iced Coffees</option>
+                                <option value="lattes">Lattes</option>
+                            </optgroup>
+                            <optgroup label="Specialty Coffees">
+                                <option value="breve">Breve</option>
+                                <option value="macchiatos">Macchiatos</option>
+                                <option value="cortado">Cortado</option>
+                                <option value="dirty chai">Dirty Chai</option>
+                                <option value="dalgona">Dalgona</option>
+                                <option value="dessert coffee">Dessert Coffee</option>
+                            </optgroup>
+                            <optgroup label="International Coffees">
+                                <option value="venezuelan coffee">Venezuelan Coffee ☕🇻🇪</option>
+                                <option value="turkish coffee">Turkish Coffee</option>
+                                <option value="cuban coffee">Cuban Coffee</option>                        
+                                <option value="galão coffee">Galão Coffee</option>                        
+                                <option value="antoccino coffee">Antoccino Coffee</option>     
+                            </optgroup>                   
+                        </select>
+                    </p>
+                    <p>
+                        <label for="coffee-alt">Or type your favorite:</label>
+                        <input type="text" name="coffee-alt" id="coffee-alt" list="coffee-list" autocomplete="off">
+                        <datalist id="coffee-list">
+                            <option value="Espresso">
+                            <option value="Espresso &amp; Coffee">
+                            <option value="Cold Brew">
+                            <option value="Cappuccino">
+                            <option value="Mocha">
+                            <option value="Iced Coffees">
+                            <option value="Lattes">
+                            <option value="Breve">
+                            <option value="Macchiatos">
+                            <option value="Cortado">
+                            <option value="Dirty Chai">
+                            <option value="Dalgona">
+                            <option value="Dessert Coffee">
+                            <option value="Venezuelan Coffee ☕🇻🇪">
+                            <option value="Turkish Coffee">
+                            <option value="Cuban Coffee">                        
+                            <option value="Galão Coffee">                        
+                            <option value="Antoccino Coffee">
+                        </datalist>
+                    </p>
+                </fieldset>
+                <br>
+                <fieldset>
+                    <legend>What is Your Favourite Food?</legend>
+                    <p>
+                        <input type="radio" name="food" id="tacos" value="tacos">
+                        <label for="tacos">Tacos</label>
+                    </p>
+                    <p>
+                        <input type="radio" name="food" id="pizza" value="pizza">
+                        <label for="pizza">Pizza</label>
+                    </p>
+                    <p>
+                        <input type="radio" name="food" id="pasta" value="pasta">
+                        <label for="pasta">Pasta</label>
+                    </p>
+                    <p>
+                        <input type="radio" name="food" id="waffle-fries" value="waffle fries">
+                        <label for="waffle-fries">Waffle Fries</label>
+                    </p>
+                    <p>
+                        <input type="radio" name="food" id="cheese-burger" value="cheese burger">
+                        <label for="cheese-burger">Cheese Burger</label>
+                    </p>
+                    <p>
+                        <input type="radio" name="food" id="french-fries" value="french fries">
+                        <label for="french-fries">French Fries</label>
+                    </p>
+                </fieldset>
+                <br>
+                <fieldset>
+                    <legend>Do You Have Pets?</legend>
+                    <p>
+                        <input type="checkbox" name="pets" id="dog" value="dog">
+                        <label for="dog">Dog</label>
+                    </p>
+                    <p>
+                        <input type="checkbox" name="pets" id="cat" value="cat">
+                        <label for="cat">Cat</label>
+                    </p>
+                    <p>
+                        <input type="checkbox" name="pets" id="fish" value="fish">
+                        <label for="fish">Fish</label>
+                    </p>
+                    <p>
+                        <input type="checkbox" name="pets" id="reptiles" value="reptiles">
+                        <label for="reptiles">Reptiles</label>
+                    </p>
+                    <p>
+                        <input type="checkbox" name="pets" id="birds" value="birds">
+                        <label for="birds">Birds</label>
+                    </p>
+                    <p>
+                        <input type="checkbox" name="pets" id="rabbit" value="rabbit">
+                        <label for="rabbit">Rabbit</label>
+                    </p>
+                    <p>
+                        <input type="checkbox" name="pets" id="horse" value="horse">
+                        <label for="horse">Horse</label>
+                    </p>
+                    <p>
+                        <input type="checkbox" name="pets" id="other-pet" value="other pet">
+                        <label for="other-pet">Other</label>
+                    </p>
+                    <p>
+                        <input type="checkbox" name="pets" id="no-pet" value="No pet">
+                        <label for="no-pet">No</label>
+                    </p>
+                </fieldset>
+                <fieldset>
+                    <legend>Send Me A Note</legend>
+                    <p>
+                        <label for="message">Your Message</label>
+                        <br>
+                        <textarea name="message" id="message" cols="30" rows="10" placeholder="Type your message here"></textarea>
+                    </p>
+                </fieldset>
+                <button type="submit">Submit</button>
+                <button type="reset">Reset</button>
+            </form>
+        </article>
+        
+        <hr>
+        
+        <section id="facebook">
+            <h2>Find Me On Facebook</h2>
+            <div class="fb-embed-wrapper">
+                <iframe 
+                    src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fpermalink.php%3Fstory_fbid%3Dpfbid02UrE7NYs6rDcGunATc9PqDTNsT6ES48VgmUJbm7Zf2FQxmWHtDZioKr9NdWaUYPkGl%26id%3D61563373696259&show_text=true&width=500" 
+                    width="500" 
+                    height="776" 
+                    style="border: none; overflow: hidden;" 
+                    title="Facebook post from Md. Mustafijur Rahman"
+                    allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </section>
+    </main>
+    
+    <hr>
+    
+    <footer>
+        <p>&lt;&lt;&lt;&copy; <a href="about.html">Md. Mustafijur Rahman</a> &gt;&gt;&gt;</p>
+        <p><a href="#">Back to Top</a></p>
+    </footer>
+</body>
+</html>
