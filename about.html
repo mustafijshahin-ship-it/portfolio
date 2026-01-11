@@ -11,13 +11,14 @@
     <link rel="stylesheet" href="main.css" type="text/css">
 </head>
 <body>
+    <a href="#main" class="skip-link">Skip to main content</a>
     <header class="page-header">
         <div class="header-bg"></div>
         <div class="header-content">
             <div class="profile-intro">
                 <div class="avatar-container">
                     <img src="Images/me.jpg" alt="Md. Mustafijur Rahman" class="avatar" width="80" height="80" loading="lazy">
-                    <div class="online-indicator"></div>
+                    <div class="online-indicator" aria-hidden="true"></div>
                 </div>
                 <div class="title-container">
                     <h1>About Me</h1>
@@ -26,7 +27,7 @@
             </div>
             
             <nav aria-label="Primary Navigation">
-                <h2>Navigation Menu</h2>
+                <h2 class="visually-hidden">Navigation Menu</h2>
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="#contact">Contact</a></li>
@@ -39,12 +40,10 @@
                 </section>
             </nav>
         </div>
-        <div class="code-bracket">{ }</div>
+        <div class="code-bracket" aria-hidden="true">{ }</div>
     </header>
     
-    <hr>
-    
-    <main>
+    <main id="main">
         <article class="about-content">
             <h2>My Journey into Web Development</h2>
             <p>Hello! I'm a passionate developer currently diving deep into the world of programming through Harvard's CS50 course. My journey began with HTML and CSS, and despite some technical setbacks (including losing all my work files recently), I'm rebuilding my knowledge from the ground up with even more determination. I believe in learning by doing, and this portfolio represents my fresh start in creating meaningful web experiences.</p>
@@ -79,8 +78,6 @@
             </section>
         </article>
         
-        <hr>
-        
         <section id="facebook" class="facebook-section">
             <h3>On Social Media</h3>
             <div class="fb-embed-wrapper">
@@ -91,7 +88,9 @@
                     style="border: none; overflow: hidden;" 
                     title="Facebook post from Md. Mustafijur Rahman"
                     allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
-                    allowfullscreen>
+                    allowfullscreen
+                    loading="lazy">
+                    <p><a href="https://www.facebook.com/permalink.php?story_fbid=pfbid02UrE7NYs6rDcGunATc9PqDTNsT6ES48VgmUJbm7Zf2FQxmWHtDZioKr9NdWaUYPkGl&id=61563373696259">View the post on Facebook</a></p>
                 </iframe>
             </div>
         </section>
@@ -106,8 +105,6 @@
             </ul>
         </section>
     </main>
-    
-    <hr>
     
     <footer>
         <p>&lt;&lt;&lt; &copy; <a href="index.html">Md. Mustafijur Rahman</a> &gt;&gt;&gt;</p>
