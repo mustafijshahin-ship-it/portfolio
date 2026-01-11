@@ -53,8 +53,9 @@ select:focus {
     left: 0;
     right: 0;
     bottom: 0;
-    background: radial-gradient(circle at 20% 80%, rgba(76, 175, 80, 0.05) 0%, transparent 50%),
-                radial-gradient(circle at 80% 20%, rgba(33, 150, 243, 0.05) 0%, transparent 50%);
+    background: 
+        radial-gradient(circle at 20% 80%, rgba(76, 175, 80, 0.05) 0%, transparent 50%),
+        radial-gradient(circle at 80% 20%, rgba(33, 150, 243, 0.05) 0%, transparent 50%);
 }
 
 .header-content {
@@ -409,6 +410,7 @@ code {
     border: 1px solid #404040;
 }
 
+
 nav a {
     color: #ffffff;
     background: rgba(25, 118, 210, 0.3);
@@ -421,6 +423,7 @@ nav a {
 nav a:hover {
     background: rgba(25, 118, 210, 0.5);
 }
+
 
 p, li, dd, td, figcaption, address {
     color: #f0f0f0;
@@ -580,4 +583,17 @@ a:hover {
     th, td {
         padding: 0.75rem;
     }
+}
+.fb-post, 
+.fb-post span, 
+.fb-post p {
+    color: #1d2129 !important;
+    background-color: #f0f2f5 !important;
+}
+
+/* Optional: Add a subtle border to make the section stand out */
+#facebook {
+    border: 2px solid #1877f2 !important;
+    border-radius: 8px !important;
+    padding: 1rem !important;
 }
