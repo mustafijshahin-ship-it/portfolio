@@ -11,34 +11,36 @@
     <link rel="stylesheet" href="main.css" type="text/css">
 </head>
 <body>
-    <a href="#main" class="skip-link">Skip to main content</a>
     <header>
         <h1>My Goals Before 2026</h1>
         <nav class="starry-nav" aria-label="Primary Navigation">
-            <div class="nav-main">
-                <ul class="nav-links">
-                    <li><a class="nav-link" href="#html"><span class="nav-icon">📚</span><span class="nav-text">Learning HTML</span></a></li>
-                    <li><a class="nav-link" href="#vacation"><span class="nav-icon">🏖️</span><span class="nav-text">Planning A Vacation</span></a></li>
-                    <li><a class="nav-link" href="#contact"><span class="nav-icon">📧</span><span class="nav-text">Contact Me</span></a></li>
-                    <li><a class="nav-link" href="#facebook"><span class="nav-icon">
-                        <svg class="facebook-icon" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-                            <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
-                        </svg>
-                    </span><span class="nav-text">On Facebook</span></a></li>
-                </ul>
-                <div class="nav-extra">
-                    <div class="progress-indicator">
-                        <span class="progress-text">CS50 Progress</span>
-                        <div class="progress-bar">
-                            <div class="progress-fill" style="width: 40%"></div>
-                        </div>
-                    </div>
+    <h2 class="visually-hidden">Primary Navigation</h2>
+    <div class="nav-main">
+        <ul class="nav-links">
+            <li><a class="nav-link" href="#html"><span class="nav-icon">📚</span><span class="nav-text">Learning HTML</span></a></li>
+            <li><a class="nav-link" href="#vacation"><span class="nav-icon">🏖️</span><span class="nav-text">Planning A Vacation</span></a></li>
+            <li><a class="nav-link" href="#contact"><span class="nav-icon">📧</span><span class="nav-text">Contact Me</span></a></li>
+            <li><a class="nav-link" href="#facebook"><span class="nav-icon">
+    <svg class="facebook-icon" width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+        <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+    </svg>
+</span><span class="nav-text">On Facebook</span></a></li>
+        </ul>
+        <div class="nav-extra">
+            <div class="progress-indicator">
+                <span class="progress-text">CS50 Progress</span>
+                <div class="progress-bar">
+                    <div class="progress-fill" style="width: 40%"></div>
                 </div>
             </div>
-        </nav>
+        </div>
+    </div>
+</nav>
     </header>
     
-    <main id="main">
+    <hr>
+    
+    <main>
         <article id="html">
             <h2>I Am Ready To Learn HTML</h2>
             <p>This is My Home Page</p>
@@ -49,6 +51,8 @@
                     <img src="Images/me.jpg" alt="Md. Mustafijur Rahman" title="Author" width="300" height="300" loading="lazy">
                     <figcaption>Md. Mustafijur Rahman</figcaption>
                 </figure>
+                
+                <hr>
                 
                 <figure>
                     <figcaption>An Example of HTML Code</figcaption>
@@ -66,29 +70,37 @@
                 </ol>
             </section>
             
-            <aside>
+            <aside aria-label="Motivation FAQ">
+                <h2 class="visually-hidden">Motivation FAQ</h2>
                 <details>
                     <summary>What motivates me while working on software development?</summary>
                     <p>I see myself as a person destined to create great things.</p>
                 </details>
+            </aside>
+            
+            <aside aria-label="Coding Hours FAQ">
+                <h2 class="visually-hidden">Coding Hours FAQ</h2>
                 <details>
                     <summary>How long do I stay involved in software development?</summary>
                     <p>I write code for <time datetime="PT3H">3 hours</time> just before my regular working hours.</p>
                 </details>
+            </aside>
+            
+            <aside aria-label="Schedule FAQ">
+                <h2 class="visually-hidden">Schedule FAQ</h2>
                 <details>
                     <summary>How early do I start working on software development?</summary>
                     <p>I start working at <time datetime="05:00">5:00 AM</time> every morning.</p>
                 </details>
             </aside>
             
-            <table aria-describedby="table-description">
+            <table>
                 <caption>My Daily Schedule</caption>
-                <p id="table-description" class="visually-hidden">A table showing my daily schedule with time periods, activities, and locations</p>
                 <thead>
                     <tr>
-                        <th scope="col">Time Period</th>
-                        <th scope="col">Time Range</th>
-                        <th scope="col">Duration</th>
+                        <th>Time Period</th>
+                        <th>Time Range</th>
+                        <th>Duration</th>
                         <th scope="col">Activity</th>
                         <th scope="col">Place</th>
                     </tr>
@@ -138,16 +150,16 @@
                 </tbody>
                 <tfoot>
                     <tr>
-                        <th scope="row" colspan="5">Daily Summary</th>
-                    </tr>
-                    <tr>
-                        <td colspan="5">
+                        <th scope="row">Daily Summary</th>
+                        <td colspan="4">
                             <small>Total productive hours: <time datetime="PT14H">14 Hours</time></small>
                         </td>
                     </tr>
                 </tfoot>
             </table>
         </article>
+        
+        <hr>
         
         <article id="vacation">
             <h2>I Am Also Planning A Vacation</h2>
@@ -217,12 +229,13 @@
                     </p>
                     <p>
                         <label for="decade">Favorite Decade (1930-2030):</label>
-                        <input type="number" name="decade" id="decade" min="1930" max="2030" step="10" value="1930" aria-describedby="decade-help">
+                        <input type="number" name="decade" id="decade" min="1930" max="2030" step="10" value="1930"aria-describedby="decade-help">
                         <span id="decade-help" class="visually-hidden">Use arrow keys or type to select a decade</span>
                     </p>
                     <p>
                         <label for="coffee">Favorite Coffee:</label>
-                        <select name="coffee" id="coffee" multiple size="4" aria-label="Choose one or more favorite coffee types">
+                        <select name="coffee" id="coffee" multiple size="4"
+                        aria-label="Choose one or more favorite coffee types">
                             <optgroup label="Classic Coffees">
                                 <option value="espresso">Espresso</option>
                                 <option value="espresso & coffee">Espresso &amp; Coffee</option>
@@ -276,45 +289,73 @@
                         </datalist>
                     </p>
                 </fieldset>
+                <br>
                 <fieldset>
                     <legend>What is Your Favourite Food?</legend>
-                    <div class="radio-group">
+                    <p>
                         <input type="radio" name="food" id="tacos" value="tacos">
                         <label for="tacos">Tacos</label>
+                    </p>
+                    <p>
                         <input type="radio" name="food" id="pizza" value="pizza">
                         <label for="pizza">Pizza</label>
+                    </p>
+                    <p>
                         <input type="radio" name="food" id="pasta" value="pasta">
                         <label for="pasta">Pasta</label>
+                    </p>
+                    <p>
                         <input type="radio" name="food" id="waffle-fries" value="waffle fries">
                         <label for="waffle-fries">Waffle Fries</label>
+                    </p>
+                    <p>
                         <input type="radio" name="food" id="cheese-burger" value="cheese burger">
                         <label for="cheese-burger">Cheese Burger</label>
+                    </p>
+                    <p>
                         <input type="radio" name="food" id="french-fries" value="french fries">
                         <label for="french-fries">French Fries</label>
-                    </div>
+                    </p>
                 </fieldset>
+                <br>
                 <fieldset>
                     <legend>Do You Have Pets?</legend>
-                    <div class="checkbox-group">
+                    <p>
                         <input type="checkbox" name="pets" id="dog" value="dog">
                         <label for="dog">Dog</label>
+                    </p>
+                    <p>
                         <input type="checkbox" name="pets" id="cat" value="cat">
                         <label for="cat">Cat</label>
+                    </p>
+                    <p>
                         <input type="checkbox" name="pets" id="fish" value="fish">
                         <label for="fish">Fish</label>
+                    </p>
+                    <p>
                         <input type="checkbox" name="pets" id="reptiles" value="reptiles">
                         <label for="reptiles">Reptiles</label>
+                    </p>
+                    <p>
                         <input type="checkbox" name="pets" id="birds" value="birds">
                         <label for="birds">Birds</label>
+                    </p>
+                    <p>
                         <input type="checkbox" name="pets" id="rabbit" value="rabbit">
                         <label for="rabbit">Rabbit</label>
+                    </p>
+                    <p>
                         <input type="checkbox" name="pets" id="horse" value="horse">
                         <label for="horse">Horse</label>
+                    </p>
+                    <p>
                         <input type="checkbox" name="pets" id="other-pet" value="other pet">
                         <label for="other-pet">Other</label>
+                    </p>
+                    <p>
                         <input type="checkbox" name="pets" id="no-pet" value="No pet">
                         <label for="no-pet">No</label>
-                    </div>
+                    </p>
                 </fieldset>
                 <fieldset>
                     <legend>Send Me A Note</legend>
@@ -329,6 +370,8 @@
             </form>
         </article>
         
+        <hr>
+        
         <section id="facebook">
             <h2>Find Me On Facebook</h2>
             <div class="fb-embed-wrapper">
@@ -339,13 +382,13 @@
                     style="border: none; overflow: hidden;" 
                     title="Facebook post from Md. Mustafijur Rahman"
                     allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
-                    allowfullscreen
-                    loading="lazy">
-                    <p><a href="https://www.facebook.com/permalink.php?story_fbid=pfbid02UrE7NYs6rDcGunATc9PqDTNsT6ES48VgmUJbm7Zf2FQxmWHtDZioKr9NdWaUYPkGl&id=61563373696259">View the post on Facebook</a></p>
+                    allowfullscreen>
                 </iframe>
             </div>
         </section>
     </main>
+    
+    <hr>
     
     <footer>
         <p>&lt;&lt;&lt;&copy; <a href="about.html">Md. Mustafijur Rahman</a> &gt;&gt;&gt;</p>
