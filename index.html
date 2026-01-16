@@ -48,12 +48,13 @@
             <section>
                 <h3>HTML5</h3>
                 <figure>
-                    <img src="Images/me.jpg" alt="Md. Mustafijur Rahman" title="Author" width="300" height="300" loading="lazy">
+                    <picture>
+                        <source srcset="Images/me.webp" type="image/webp">
+                        <img src="Images/me.jpg" alt="Md. Mustafijur Rahman" title="Author" width="300" height="300" loading="lazy" fetchpriority="high" decoding="async">
+                        </picture>
                     <figcaption>Md. Mustafijur Rahman</figcaption>
-                </figure>
-                
+                </figure>                
                 <hr>
-                
                 <figure>
                     <figcaption>An Example of HTML Code</figcaption>
                     <p><code>&lt;h1&gt;Hello Bangladesh!&lt;/h1&gt;</code></p>
@@ -172,7 +173,9 @@
                     <li>
                         <p>I have heard good things about The Kuakata Sea Beach.</p>
                         <figure>
-                            <img src="Images/beach.jpg" alt="Kuakata Sea Beach" title="I want to visit here" width="400" height="225" loading="lazy">
+                            <picture>
+                                <source srcset="Images/beach.webp" type="image/webp"> <img src="Images/beach.jpg" alt="Kuakata Sea Beach" title="I want to visit here" width="400" height="225" loading="lazy" decoding="async">
+                            </picture>
                             <figcaption>A Stunning View of The Beach From Sky</figcaption>
                         </figure>
                     </li>
@@ -184,8 +187,10 @@
                             R47G+WQ Kuakata, Patuakhali
                         </address>
                         <figure>
-                            <img src="Images/sands.jpg" alt="Landscape of Kuakata" title="Beauty in Sands" width="400" height="225" loading="lazy">
-                            <figcaption>Beauty in Sands</figcaption>
+                            <picture>
+                                <source srcset="Images/sands.webp" type="image/webp"> <img src="Images/sands.jpg" alt="Landscape of Kuakata" title="Beauty in Sands" width="400" height="225" loading="lazy"decoding="async">
+                            </picture>
+                        <figcaption>Beauty in Sands</figcaption>
                         </figure>
                     </li>
                 </ul>
@@ -372,20 +377,54 @@
         
         <hr>
         
-        <section id="facebook">
-            <h2>Find Me On Facebook</h2>
-            <div class="fb-embed-wrapper">
-                <iframe 
-                    src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fpermalink.php%3Fstory_fbid%3Dpfbid02UrE7NYs6rDcGunATc9PqDTNsT6ES48VgmUJbm7Zf2FQxmWHtDZioKr9NdWaUYPkGl%26id%3D61563373696259&show_text=true&width=500" 
-                    width="500" 
-                    height="776" 
-                    style="border: none; overflow: hidden;" 
-                    title="Facebook post from Md. Mustafijur Rahman"
-                    allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
-                    allowfullscreen>
-                </iframe>
+       <section id="facebook" aria-label="Facebook content section">
+    <h2>Find Me On Facebook</h2>
+    
+    <div class="facebook-preview-card">
+        <!-- Facebook-style header -->
+        <div class="fb-preview-header">
+            <div class="fb-author-info">
+                <span class="fb-avatar" aria-hidden="true">📱</span>
+                <div>
+                    <strong class="fb-author-name">Md. Mustafijur Rahman</strong>
+                    <span class="fb-post-time">about 2 minutes ago · 🌍</span>
+                </div>
             </div>
-        </section>
+        </div>
+        
+        <div class="fb-preview-content">
+            <p>Hello everyone! I'm excited to share that I'm diving deep into web development through Harvard's CS50 course. I recently rebuilt my portfolio website from scratch using semantic HTML5 and accessible CSS.</p>
+            
+            <p>The journey has been challenging but incredibly rewarding—from understanding pointers in C to mastering CSS layouts. I'm documenting my progress as I learn, building in public every step of the way!</p>
+            
+            <div class="fb-preview-tags">
+                <span class="fb-tag">#CS50</span>
+                <span class="fb-tag">#WebDevelopment</span>
+                <span class="fb-tag">#LearningInPublic</span>
+                <span class="fb-tag">#Portfolio</span>
+            </div>
+        </div>
+        
+        <!-- Engagement stats (simulated) -->
+        <div class="fb-engagement">
+            <span class="fb-like">👍 12 Likes</span>
+            <span class="fb-comment">💬 3 Comments</span>
+            <span class="fb-share">🔄 1 Share</span>
+        </div>
+        
+        <!-- Clear call-to-action link -->
+        <div class="fb-action-link">
+            <a href="https://www.facebook.com/permalink.php?story_fbid=pfbid02UrE7NYs6rDcGunATc9PqDTNsT6ES48VgmUJbm7Zf2FQxmWHtDZioKr9NdWaUYPkGl&id=61563373696259" 
+               class="fb-original-link"
+               target="_blank" 
+               rel="noopener noreferrer"
+               aria-label="View the original Facebook post (opens in new tab)">
+                <span aria-hidden="true">🔗</span> View Original Post on Facebook
+            </a>
+            <p class="fb-note"><small>Opens in a new tab</small></p>
+        </div>
+    </div>
+</section>
     </main>
     
     <hr>
