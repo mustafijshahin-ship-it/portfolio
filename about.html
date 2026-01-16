@@ -16,7 +16,7 @@
         <div class="header-content">
             <div class="profile-intro">
                 <div class="avatar-container">
-                    <img src="Images/me.jpg" alt="Md. Mustafijur Rahman" class="avatar" width="80" height="80" loading="lazy">
+                    <img src="Images/me.jpg" alt="Md. Mustafijur Rahman" class="avatar" width="80" height="80" loading="lazy" fetchpriority="high" decoding="async">
                     <div class="online-indicator"></div>
                 </div>
                 <div class="title-container">
@@ -83,25 +83,60 @@
         
         <hr>
         
-        <section id="facebook" class="facebook-section">
-            <h3>On Social Media</h3>
-            <div class="fb-embed-wrapper">
-                <iframe 
-                    src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fpermalink.php%3Fstory_fbid%3Dpfbid02UrE7NYs6rDcGunATc9PqDTNsT6ES48VgmUJbm7Zf2FQxmWHtDZioKr9NdWaUYPkGl%26id%3D61563373696259&show_text=true&width=500" 
-                    width="500" 
-                    height="776" 
-                    style="border: none; overflow: hidden;" 
-                    title="Facebook post from Md. Mustafijur Rahman"
-                    allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
-                    allowfullscreen>
-                </iframe>
+    <section id="facebook" aria-label="Facebook content section">
+    <h2>Find Me On Facebook</h2>
+    
+    <div class="facebook-preview-card">
+        <!-- Facebook-style header -->
+        <div class="fb-preview-header">
+            <div class="fb-author-info">
+                <span class="fb-avatar" aria-hidden="true">📱</span>
+                <div>
+                    <strong class="fb-author-name">Md. Mustafijur Rahman</strong>
+                    <span class="fb-post-time">about 2 minutes ago · 🌍</span>
+                </div>
             </div>
-        </section>
+        </div>
+        
+        <!-- Post content preview -->
+        <div class="fb-preview-content">
+            <p>Hello everyone! I'm excited to share that I'm diving deep into web development through Harvard's CS50 course. I recently rebuilt my portfolio website from scratch using semantic HTML5 and accessible CSS.</p>
+            
+            <p>The journey has been challenging but incredibly rewarding—from understanding pointers in C to mastering CSS layouts. I'm documenting my progress as I learn, building in public every step of the way!</p>
+            
+            <div class="fb-preview-tags">
+                <span class="fb-tag">#CS50</span>
+                <span class="fb-tag">#WebDevelopment</span>
+                <span class="fb-tag">#LearningInPublic</span>
+                <span class="fb-tag">#Portfolio</span>
+            </div>
+        </div>
+        
+        <!-- Engagement stats (simulated) -->
+        <div class="fb-engagement">
+            <span class="fb-like">👍 12 Likes</span>
+            <span class="fb-comment">💬 3 Comments</span>
+            <span class="fb-share">🔄 1 Share</span>
+        </div>
+        
+        <!-- Clear call-to-action link -->
+        <div class="fb-action-link">
+            <a href="https://www.facebook.com/permalink.php?story_fbid=pfbid02UrE7NYs6rDcGunATc9PqDTNsT6ES48VgmUJbm7Zf2FQxmWHtDZioKr9NdWaUYPkGl&id=61563373696259" 
+               class="fb-original-link"
+               target="_blank" 
+               rel="noopener noreferrer"
+               aria-label="View the original Facebook post (opens in new tab)">
+                <span aria-hidden="true">🔗</span> View Original Post on Facebook
+            </a>
+            <p class="fb-note"><small>Opens in a new tab</small></p>
+        </div>
+    </div>
+    </section>
         
         <section id="contact" class="contact-section">
             <h3>Get in Touch</h3>
             <ul class="contact-links">
-                <li>Download an <a href="Images/me.jpg" download>image of Author</a></li>
+                <li>Download an <a href="Images/me.jpg" decoding="async" download>image of Author</a></li>
                 <li>Contact me at <a href="mailto:mustafij.shahin@gmail.com">my email address</a></li>
                 <li>Dial <a href="tel:+8801620592038">my phone number</a></li>
                 <li>Open <a href="https://www.google.com" target="_blank" rel="noopener">Google</a> in a new tab</li>
