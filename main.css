@@ -609,3 +609,28 @@ a:hover {
     font-weight: bold;
     user-select: none;
 }
+
+.responsive-image {
+    display: block;
+    margin: 1.5rem 0;
+    width: 100%;
+    overflow: hidden;
+}
+
+.responsive-image img {
+    width: 100%;
+    height: auto;
+    max-width: 600px;
+    display: block;
+    margin: 0 auto;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.5);
+}
+
+.responsive-image figcaption {
+    text-align: center;
+    font-style: italic;
+    margin-top: 0.5rem;
+    color: #e0e0e0;
+    font-size: 0.9rem;
+}
