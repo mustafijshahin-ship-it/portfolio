@@ -1,14 +1,17 @@
 body {
-    background-color: black;
-    color: white;
+    background-color: #1a1a1a;
+    color: #f0f0f0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
 }
 
 h1 {
-    color: beige;
-}
-
-h2 {
-    color: rgb(233, 233, 22);
+    color: #4fc3f7;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 0.5rem;
 }
 
 #learn-p1 {
@@ -20,11 +23,11 @@ h2 {
 }
 
 #learn-p3 {
-    color: #ffff00;
+    color: #f1c40f;
 }
 
 #learn-p4 {
-    color: #4caf50;
+    color: #2ecc71;
 }
 
 #dev-p1.odd,
@@ -34,5 +37,13 @@ h2 {
 
 #dev-p2.even,
 #dev-p4.even {
-    color: #81c784;
+    color: #2ecc71;
+}
+
+.content-page p {
+    background: #2d2d2d;
+    padding: 1.2rem;
+    border-radius: 8px;
+    border-left: 4px solid currentColor;
+    margin: 1.2rem 0;
 }
