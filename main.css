@@ -39,13 +39,14 @@ a:focus,
 button:focus,
 input:focus,
 textarea:focus,
-select:focus {
+select:focus,
+.avatar:focus {
     outline: 3px solid #42a5f5;
     outline-offset: 2px;
 }
 
 .page-header {
-    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+    background: linear-gradient(135deg, #1a1a2e, #16213e);
     border-bottom: 3px solid #0f3460;
     padding: 2rem 1.5rem;
     margin-bottom: 2rem;
@@ -59,7 +60,7 @@ select:focus {
     left: 0;
     right: 0;
     bottom: 0;
-    background: radial-gradient(circle at 20% 80%, rgba(76, 175, 80, 0.05) 0%, transparent 50%), radial-gradient(circle at 80% 20%, rgba(33, 150, 243, 0.05) 0%, transparent 50%);
+    background: radial-gradient(circle at 20% 80%, rgba(76, 175, 80, 0.05) 0, transparent 50%), radial-gradient(circle at 80% 20%, rgba(33, 150, 243, 0.05) 0, transparent 50%);
 }
 
 .header-content {
@@ -84,12 +85,6 @@ select:focus {
     height: 80px;
     border-radius: 50%;
     border: 3px solid #4fc3f7;
-    box-shadow: 0 0 15px rgba(79, 195, 247, 0.3);
-}
-
-.avatar:hover {
-    transform: none;
-    box-shadow: 0 0 25px rgba(79, 195, 247, 0.5);
 }
 
 .online-indicator {
@@ -101,7 +96,6 @@ select:focus {
     background-color: #4caf50;
     border-radius: 50%;
     border: 2px solid #ffffff;
-    box-shadow: 0 0 5px rgba(76, 175, 80, 0.8);
 }
 
 .title-container {
@@ -159,7 +153,6 @@ select:focus {
     background: rgba(79, 195, 247, 0.1);
     border-color: #4fc3f7;
     transform: translateY(-2px);
-    box-shadow: 0 5px 15px rgba(79, 195, 247, 0.3);
 }
 
 .nav-icon {
@@ -224,13 +217,11 @@ article {
     padding: 2rem;
     margin: 2.5rem 0;
     transition: all 0.3s ease;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
     color: #ffffff;
 }
 
 article:hover {
     border-color: #4fc3f7;
-    box-shadow: 0 8px 25px rgba(0,0,0,0.2);
     transform: translateY(-4px);
 }
 
@@ -246,13 +237,11 @@ article section:last-child {
 
 img {
     border-radius: 8px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    box-shadow: 0 3px 10px rgba(0,0,0,0.5);
+    transition: transform 0.3s ease;
 }
 
 img:hover {
     transform: scale(1.02);
-    box-shadow: 0 8px 20px rgba(0,0,0,0.6);
 }
 
 aside {
@@ -376,7 +365,7 @@ footer a {
 
 footer a:hover {
     background: #3498db;
-    color: white;
+    color: #ffffff;
 }
 
 .visually-hidden {
@@ -508,7 +497,7 @@ th, td {
 
 th {
     background: #2c3e50;
-    color: white;
+    color: #ffffff;
     font-weight: 600;
 }
 
@@ -555,7 +544,50 @@ a:hover {
 .content-page {
     max-width: 800px;
     margin: 0 auto;
-    padding: 0 1rem 3rem 1rem;
+    padding: 2rem 1rem;
+    background-color: #1a1a1a;
+    color: #f0f0f0;
+    line-height: 1.6;
+}
+
+.content-page h1 {
+    color: #4fc3f7;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 0.5rem;
+}
+
+#learn-p1 {
+    color: #ff6b6b;
+}
+
+#learn-p2 {
+    color: #ffa500;
+}
+
+#learn-p3 {
+    color: #f1c40f;
+}
+
+#learn-p4 {
+    color: #2ecc71;
+}
+
+#dev-p1.odd,
+#dev-p3.odd {
+    color: #64b5f6;
+}
+
+#dev-p2.even,
+#dev-p4.even {
+    color: #2ecc71;
+}
+
+.content-page p {
+    background: #2d2d2d;
+    padding: 1.2rem;
+    border-radius: 8px;
+    border-left: 4px solid currentColor;
+    margin: 1.2rem 0;
 }
 
 .responsive-image {
@@ -572,7 +604,6 @@ a:hover {
     display: block;
     margin: 0 auto;
     border-radius: 8px;
-    box-shadow: 0 3px 10px rgba(0,0,0,0.5);
 }
 
 .responsive-image figcaption {
@@ -583,8 +614,8 @@ a:hover {
     font-size: 0.9rem;
 }
 
-.fb-post, 
-.fb-post span, 
+.fb-post,
+.fb-post span,
 .fb-post p {
     color: #1d2129 !important;
     background-color: #f0f2f5 !important;
