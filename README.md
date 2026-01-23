@@ -20,7 +20,7 @@ A modern, accessible portfolio website built with semantic HTML5 and CSS3. Featu
 
 ### ✅ **Perfect Performance**
 - ✅ **100/100 Performance Score** on mobile and desktop
-- Optimized WebP images with responsive `srcset` attributes
+- Optimized WebP images with explicit dimensions
 - Minified and consolidated CSS
 - Zero Cumulative Layout Shift (CLS)
 
@@ -47,44 +47,35 @@ A modern, accessible portfolio website built with semantic HTML5 and CSS3. Featu
 
 ## 📁 Project Structure
 portfolio/
-├── index.html # Main homepage
-├── about.html # About me page
-├── learning.html # Learning path details
-├── development.html # Development principles
-├── main.css # All consolidated & optimized styles
-├── README.md # This file
-├── Images/ # All optimized project images
-│ ├── me.jpg # Avatar (JPEG fallback)
-│ ├── me.webp # Avatar (WebP optimized)
-│ ├── beach.jpg # Beach image (JPEG fallback)
-│ ├── beach.webp # Beach image (WebP optimized)
-│ ├── beach-small.webp # Responsive small version
-│ ├── sands.jpg # Landscape image (JPEG fallback)
-│ ├── sands.webp # Landscape image (WebP optimized)
-│ └── sands-small.webp # Responsive small version
+├── index.html          # Main homepage
+├── about.html          # About me page
+├── learning.html       # Learning path details
+├── development.html    # Development principles
+├── main.css            # All consolidated & optimized styles
+├── README.md           # This file
+├── Images/             # All optimized project images
+│   ├── me.jpg          # Avatar (Optimized JPEG)
+│   ├── me.webp         # Avatar (Optimized WebP)
+│   ├── beach.jpg       # Beach image (Optimized JPEG)
+│   ├── beach.webp      # Beach image (Optimized WebP)
+│   ├── sands.jpg       # Landscape image (Optimized JPEG)
+│   └── sands.webp      # Landscape image (Optimized WebP)
 └── (Other assets)
-
-text
 
 ## 🔧 Development & Optimization Highlights
 
 ### **Image Optimization Strategy**
 ```html
-<!-- Modern responsive images with WebP and explicit dimensions -->
+<!-- Optimized WebP images with explicit dimensions -->
 <picture>
-    <source srcset="Images/beach-small.webp 200w, Images/beach.webp 300w"
-            sizes="(max-width: 768px) 90vw, 300px"
-            type="image/webp">
-    <source srcset="Images/beach-small.jpg 200w, Images/beach.jpg 300w"
-            sizes="(max-width: 768px) 90vw, 300px"
-            type="image/jpeg">
+    <source srcset="Images/beach.webp" type="image/webp">
     <img src="Images/beach.jpg" alt="Kuakata Sea Beach"
          width="300" height="168" loading="lazy" decoding="async">
 </picture>
 Performance Optimization Process
 CSS Consolidation: Merged style.css into main.css to eliminate render-blocking requests and remove unused CSS.
 
-Image Optimization: Converted all images to WebP format and created responsive sizes, reducing payload by 60-75%.
+Image Optimization: Converted all images to optimized WebP and JPEG formats, significantly reducing file size.
 
 Accessibility Enhancement: Added explicit width and height attributes to all images to eliminate layout shifts.
 
