@@ -1,3 +1,9 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 html {
     font-size: 22px;
     scroll-behavior: smooth;
@@ -53,9 +59,7 @@ select:focus {
     left: 0;
     right: 0;
     bottom: 0;
-    background: 
-        radial-gradient(circle at 20% 80%, rgba(76, 175, 80, 0.05) 0%, transparent 50%),
-        radial-gradient(circle at 80% 20%, rgba(33, 150, 243, 0.05) 0%, transparent 50%);
+    background: radial-gradient(circle at 20% 80%, rgba(76, 175, 80, 0.05) 0%, transparent 50%), radial-gradient(circle at 80% 20%, rgba(33, 150, 243, 0.05) 0%, transparent 50%);
 }
 
 .header-content {
@@ -208,7 +212,7 @@ select:focus {
     bottom: 1rem;
     font-family: 'Courier New', monospace;
     font-size: 3rem;
-    color: rgba(255, 255, 255, 0.3);
+    color: rgba(255, 255, 255, 0.65);
     font-weight: bold;
     user-select: none;
 }
@@ -411,7 +415,6 @@ code {
     border: 1px solid #404040;
 }
 
-
 nav a {
     color: #ffffff;
     background: rgba(25, 118, 210, 0.3);
@@ -424,7 +427,6 @@ nav a {
 nav a:hover {
     background: rgba(25, 118, 210, 0.5);
 }
-
 
 p, li, dd, td, figcaption, address {
     color: #f0f0f0;
@@ -533,6 +535,67 @@ a:hover {
     color: #e3f2fd;
 }
 
+.page-nav {
+    padding: 1rem;
+    background: #2d2d2d;
+    border-bottom: 1px solid #404040;
+    margin-bottom: 2rem;
+}
+
+.page-nav a {
+    color: #4fc3f7;
+    text-decoration: none;
+    margin-right: 1.5rem;
+}
+
+.page-nav a:hover {
+    text-decoration: underline;
+}
+
+.content-page {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 1rem 3rem 1rem;
+}
+
+.responsive-image {
+    display: block;
+    margin: 1.5rem 0;
+    width: 100%;
+    overflow: hidden;
+}
+
+.responsive-image img {
+    width: 100%;
+    height: auto;
+    max-width: 600px;
+    display: block;
+    margin: 0 auto;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.5);
+}
+
+.responsive-image figcaption {
+    text-align: center;
+    font-style: italic;
+    margin-top: 0.5rem;
+    color: #e0e0e0;
+    font-size: 0.9rem;
+}
+
+.fb-post, 
+.fb-post span, 
+.fb-post p {
+    color: #1d2129 !important;
+    background-color: #f0f2f5 !important;
+}
+
+#facebook {
+    border: 2px solid #1877f2 !important;
+    border-radius: 8px !important;
+    padding: 1rem !important;
+}
+
 @media (max-width: 768px) {
     html {
         font-size: 18px;
@@ -584,53 +647,4 @@ a:hover {
     th, td {
         padding: 0.75rem;
     }
-}
-
-.fb-post, 
-.fb-post span, 
-.fb-post p {
-    color: #1d2129 !important;
-    background-color: #f0f2f5 !important;
-}
-
-#facebook {
-    border: 2px solid #1877f2 !important;
-    border-radius: 8px !important;
-    padding: 1rem !important;
-}
-
-.code-bracket {
-    position: absolute;
-    right: 2rem;
-    bottom: 1rem;
-    font-family: 'Courier New', monospace;
-    font-size: 3rem;
-    color: rgba(255, 255, 255, 0.65);
-    font-weight: bold;
-    user-select: none;
-}
-
-.responsive-image {
-    display: block;
-    margin: 1.5rem 0;
-    width: 100%;
-    overflow: hidden;
-}
-
-.responsive-image img {
-    width: 100%;
-    height: auto;
-    max-width: 600px;
-    display: block;
-    margin: 0 auto;
-    border-radius: 8px;
-    box-shadow: 0 3px 10px rgba(0,0,0,0.5);
-}
-
-.responsive-image figcaption {
-    text-align: center;
-    font-style: italic;
-    margin-top: 0.5rem;
-    color: #e0e0e0;
-    font-size: 0.9rem;
 }
