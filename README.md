@@ -46,21 +46,21 @@ A modern, accessible portfolio website built with semantic HTML5 and CSS3. Featu
 | **PageSpeed Insights** | Performance auditing & optimization guidance |
 
 ## 📁 Project Structure
-portfolio/
-├── index.html          # Main homepage
-├── about.html          # About me page
-├── learning.html       # Learning path details
-├── development.html    # Development principles
-├── main.css            # All consolidated & optimized styles
-├── README.md           # This file
-├── Images/             # All optimized project images
-│   ├── me.jpg          # Avatar (Optimized JPEG)
-│   ├── me.webp         # Avatar (Optimized WebP)
-│   ├── beach.jpg       # Beach image (Optimized JPEG)
-│   ├── beach.webp      # Beach image (Optimized WebP)
-│   ├── sands.jpg       # Landscape image (Optimized JPEG)
-│   └── sands.webp      # Landscape image (Optimized WebP)
-└── (Other assets)
+graph TD
+    A[portfolio/] --> B[index.html]
+    A --> C[about.html]
+    A --> D[learning.html]
+    A --> E[development.html]
+    A --> F[main.css]
+    A --> G[README.md]
+    A --> H[Images/]
+    H --> I[me.jpg]
+    H --> J[me.webp]
+    H --> K[beach.jpg]
+    H --> L[beach.webp]
+    H --> M[sands.jpg]
+    H --> N[sands.webp]
+    A --> O[(Other assets)]
 
 ## 🔧 Development & Optimization Highlights
 
