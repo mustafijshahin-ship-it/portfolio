@@ -46,6 +46,8 @@ A modern, accessible portfolio website built with semantic HTML5 and CSS3. Featu
 | **PageSpeed Insights** | Performance auditing & optimization guidance |
 
 ## 📁 Project Structure
+
+```mermaid
 graph TD
     A[portfolio/] --> B[index.html]
     A --> C[about.html]
@@ -61,6 +63,7 @@ graph TD
     H --> M[sands.jpg]
     H --> N[sands.webp]
     A --> O[(Other assets)]
+```
 
 ## 🔧 Development & Optimization Highlights
 
